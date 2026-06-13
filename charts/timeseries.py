@@ -8,6 +8,7 @@ from charts.monetary_base import render_monetary_base_chart
 from charts.tankan_actual_forecast import render_tankan_actual_forecast_chart
 from config import SERIES_GROUPS
 from ui.tankan_series_groups import build_tankan_actual_forecast_presets
+from charts.depositor_deposits import render_depositor_deposits_chart
 
 
 def render_line_chart(long_df: pd.DataFrame) -> None:
@@ -102,6 +103,14 @@ def render_chart(
 
     if group_config and group_config.get("chart_type") == "tankan_actual_forecast":
         render_tankan_actual_forecast_chart(
+            long_df=long_df,
+            selected_group_name=selected_group_name,
+        )
+        return
+
+    if group_config and group_config.get("chart_type") == "depositor_deposits":
+        render_depositor_deposits_chart(
+            db=db,
             long_df=long_df,
             selected_group_name=selected_group_name,
         )

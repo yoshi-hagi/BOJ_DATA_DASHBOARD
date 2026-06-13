@@ -119,4 +119,62 @@ SERIES_GROUPS = {
             },
         },
     },
+    "MD10": {
+        "一般法人預金": {
+            "chart_type": "depositor_deposits",
+            "codes": [
+                # 上段: 積み上げ棒グラフ
+                "DLDDLKY42111_DLDD3DB201",
+                "DLDDLKY42211_DLDD3DB202",
+                "DLDDLKY42311_DLDD3DB203",
+                "DLDDLKY42411_DLDD3DB204",
+                "DLDDLKY42511_DLDD3DB205",
+                "DLDDLKY42611_DLDD3DB206",
+                # 下段: 折れ線グラフ
+                "DLDDLKY45011_DLDD3DB2TL",
+            ],
+            "fields": {
+                "bars": [
+                    "DLDDLKY42111_DLDD3DB201",
+                    "DLDDLKY42211_DLDD3DB202",
+                    "DLDDLKY42311_DLDD3DB203",
+                    "DLDDLKY42411_DLDD3DB204",
+                    "DLDDLKY42511_DLDD3DB205",
+                    "DLDDLKY42611_DLDD3DB206",
+                ],
+                "line": "DLDDLKY45011_DLDD3DB2TL",
+                "line_label": "一般法人預金 合計",
+                "top_yaxis_title": "一般法人預金 内訳",
+                "bottom_yaxis_title": "一般法人預金 合計",
+            },
+        },
+        "個人預金": {
+            "chart_type": "depositor_deposits",
+            "codes": [
+                # 上段: 積み上げ棒グラフ
+                "DLDDLKY42112_DLDD3DB301",
+                "DLDDLKY42212_DLDD3DB302",
+                "DLDDLKY42312_DLDD3DB303",
+                "DLDDLKY42412_DLDD3DB304",
+                "DLDDLKY42512_DLDD3DB305",
+                "DLDDLKY42612_DLDD3DB306",
+                # 下段: 折れ線グラフ
+                "DLDDLKY45012_DLDD3DB3TL",
+            ],
+            "fields": {
+                "bars": [
+                    "DLDDLKY42112_DLDD3DB301",
+                    "DLDDLKY42212_DLDD3DB302",
+                    "DLDDLKY42312_DLDD3DB303",
+                    "DLDDLKY42412_DLDD3DB304",
+                    "DLDDLKY42512_DLDD3DB305",
+                    "DLDDLKY42612_DLDD3DB306",
+                ],
+                "line": "DLDDLKY45012_DLDD3DB3TL",
+                "line_label": "個人預金 合計",
+                "top_yaxis_title": "個人預金 内訳",
+                "bottom_yaxis_title": "個人預金 合計",
+            },
+        },
+    },
 }
