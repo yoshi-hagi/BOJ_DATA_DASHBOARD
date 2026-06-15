@@ -9,6 +9,14 @@ from charts.tankan_actual_forecast import render_tankan_actual_forecast_chart
 from config import SERIES_GROUPS
 from ui.tankan_series_groups import build_tankan_actual_forecast_presets
 from charts.depositor_deposits import render_depositor_deposits_chart
+from charts.balance_of_payments import render_bop_summary_chart
+
+# 国際収支チャートの組み合わせ
+BOP_SUMMARY_CHART_TYPES = {
+    "current_account",
+    "trade_services",
+    "primary_income",
+}
 
 
 def render_line_chart(long_df: pd.DataFrame) -> None:
@@ -110,6 +118,14 @@ def render_chart(
 
     if group_config and group_config.get("chart_type") == "depositor_deposits":
         render_depositor_deposits_chart(
+            db=db,
+            long_df=long_df,
+            selected_group_name=selected_group_name,
+        )
+        return
+
+    if group_config and group_config.get("chart_type") in BOP_SUMMARY_CHART_TYPES:
+        render_bop_summary_chart(
             db=db,
             long_df=long_df,
             selected_group_name=selected_group_name,

@@ -177,4 +177,105 @@ SERIES_GROUPS = {
             },
         },
     },
+    "BP01": {
+        "経常収支チャート": {
+            "chart_type": "current_account",
+            "codes": [
+                "BPBP6JYNCB",  # 経常収支
+                "BPBP6JYNTB",  # 貿易収支
+                "BPBP6JYNSN",  # サービス収支
+                "BPBP6JYNPIN",  # 第一次所得収支
+                "BPBP6JYNSIN",  # 第二次所得収支
+            ],
+            "fields": {
+                "total": "BPBP6JYNCB",
+                "components": [
+                    "BPBP6JYNTB",
+                    "BPBP6JYNSN",
+                    "BPBP6JYNPIN",
+                    "BPBP6JYNSIN",
+                ],
+                "labels": {
+                    "total": "経常収支",
+                    "BPBP6JYNCB": "経常収支",
+                    "BPBP6JYNTB": "貿易収支",
+                    "BPBP6JYNSN": "サービス収支",
+                    "BPBP6JYNPIN": "第一次所得収支",
+                    "BPBP6JYNSIN": "第二次所得収支",
+                },
+            },
+        },
+        "貿易・サービス収支チャート": {
+            "chart_type": "trade_services",
+            "codes": [
+                "BPBP6JYNTS",  # 貿易・サービス収支
+                "BPBP6JYNTB1",  # 一般商品
+                "BPBP6JYNTB2",  # 仲介貿易商品
+                "BPBP6JYNTB3",  # 非貨幣金
+                "BPBP6JYNSN1",  # サービス/輸送
+                "BPBP6JYNSN2",  # サービス/旅行
+                "BPBP6JYNSN9",  # サービス/その他サービス
+            ],
+            "fields": {
+                "total": "BPBP6JYNTS",
+                "components": [
+                    "BPBP6JYNTB1",
+                    "BPBP6JYNTB2",
+                    "BPBP6JYNTB3",
+                    "BPBP6JYNSN1",
+                    "BPBP6JYNSN2",
+                    "BPBP6JYNSN9",
+                ],
+                "labels": {
+                    "total": "貿易・サービス収支",
+                    "BPBP6JYNTS": "貿易・サービス収支",
+                    "BPBP6JYNTB1": "一般商品",
+                    "BPBP6JYNTB2": "仲介貿易商品",
+                    "BPBP6JYNTB3": "非貨幣金",
+                    "BPBP6JYNSN1": "サービス/輸送",
+                    "BPBP6JYNSN2": "サービス/旅行",
+                    "BPBP6JYNSN9": "サービス/その他サービス",
+                },
+            },
+        },
+        "第一次所得収支チャート": {
+            "chart_type": "primary_income",
+            "codes": [
+                "BPBP6JYNPIN",  # 第一次所得収支
+                "BPBP6JYNPIN1",  # 雇用者報酬
+                "BPBP6JYNPIN211",  # 直接投資収益/出資所得
+                "BPBP6JYNPIN212",  # 直接投資収益/利子所得
+                "BPBP6JYNPIN221",  # 投資収益/証券投資収益/配当金
+                "BPBP6JYNPIN222",  # 投資収益/証券投資収益/債券利子
+                "BPBP6JYNPIN291",  # 投資収益/その他投資収益/出資所得
+                "BPBP6JYNPIN292",  # 投資収益/その他投資収益/利子所得
+                "BPBP6JYNPIN9",  # その他第一次所得
+            ],
+            "fields": {
+                "total": "BPBP6JYNPIN",
+                "components": [
+                    "BPBP6JYNPIN1",
+                    "BPBP6JYNPIN211",
+                    "BPBP6JYNPIN212",
+                    "BPBP6JYNPIN221",
+                    "BPBP6JYNPIN222",
+                    "BPBP6JYNPIN291",
+                    "BPBP6JYNPIN292",
+                    "BPBP6JYNPIN9",
+                ],
+                "labels": {
+                    "total": "第一次所得収支",
+                    "BPBP6JYNPIN": "第一次所得収支",
+                    "BPBP6JYNPIN1": "雇用者報酬",
+                    "BPBP6JYNPIN211": "直接投資収益／出資所得",
+                    "BPBP6JYNPIN212": "直接投資収益／利子所得",
+                    "BPBP6JYNPIN221": "証券投資収益／配当金",
+                    "BPBP6JYNPIN222": "証券投資収益／債券利子",
+                    "BPBP6JYNPIN291": "その他投資収益／出資所得",
+                    "BPBP6JYNPIN292": "その他投資収益／利子所得",
+                    "BPBP6JYNPIN9": "その他第一次所得",
+                },
+            },
+        },
+    },
 }
