@@ -16,6 +16,8 @@ BOP_SUMMARY_CHART_TYPES = {
     "current_account",
     "trade_services",
     "primary_income",
+    "outward_direct_investment",
+    "inward_direct_investment",
 }
 
 
